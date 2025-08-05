@@ -207,6 +207,121 @@ section {
     background-color: #404BBF;
 }
 
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+    background-color: #2E2F4266;
+    color: #2E2F42;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    /* pointer-events: none; */
+}
+
+/* .modal-overlay.is-open  {
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.modal {
+    
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    width: 408px;
+    height: 80%;
+}
+
+.close-modal-btn {
+    background-color: #E7E9FC;
+    
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0000001A;
+
+    height: 24px;
+    width: 24px;
+    margin: 24px 0px;
+    margin-left: auto;
+    margin-right: 24px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.modal h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+}
+
+.overlay-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    color: #8E8F99;
+
+    margin: 0px 24px;
+}
+
+.overlay-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+}
+
+.overlay-form label::placeholder {
+    color: #2E2F4266;
+}
+
+.input-wrapper {
+  position: relative;
+  
+}
+
+.overlay-form input {
+    padding-left: 28px;
+
+    width: 360px;
+    height: 40px;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #4D5AE5;
+    border-style: solid;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 29px;
+    left: 16px;
+    bottom: 11px;
+}
+
 /* charachteristics */
 
 .characteristics-container {
@@ -526,10 +641,12 @@ input {
     flex-wrap: wrap;
 }
 
-.form-label {
+.subscribe-form label {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    width: 50%;
 
     font-size: 16px;
     font-weight: 500;
