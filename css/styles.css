@@ -233,11 +233,9 @@ section {
 } */
 
 .modal {
-    
     background-color: #FCFCFC;
     border-radius: 4px;
     width: 408px;
-    /* height: 90%; */
 }
 
 .close-modal-btn {
@@ -259,22 +257,24 @@ section {
     justify-content: center;
     align-items: center;
     
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal-btn:hover,
-.close-modal-btn:focus {
+.close-modal-btn:hover {
     background-color: rgba(64, 75, 191, 1);
     fill: #fff;
-    stroke: fff;
     border: none;
 }
 .close-modal-btn:hover .close-icon,
 .close-modal-btn:focus .close-icon {
     fill: #fff;
-    stroke: fff;
+    
 }
 
-
+.close-icon {
+    fill: rgba(46, 47, 66, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal h2 {
     font-size: 16px;
@@ -307,11 +307,19 @@ section {
     font-weight: 400;
 }
 
-
+/* .overlay-icon:focus-within {
+    fill: rgba(77, 90, 229, 1);
+} */
 
 .box-form {
     position: relative;
 }
+
+/* .box-form:focus {
+    fill: rgba(77, 90, 229, 1);
+
+} */
+
 
 
 .form-input:focus {
@@ -339,11 +347,10 @@ section {
 }
 
 .comment-input {
-    padding-left: 16px;
+    padding: 8px 16px;
     height: 120px;
     resize: none;
-
-     vertical-align: top;
+    
 }
 
 .comment-input::placeholder {
@@ -351,9 +358,7 @@ section {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    opacity: 1;
 }
-
 .overlay-icon {
     position: absolute;
     top: 50%;
@@ -396,6 +401,7 @@ section {
     height: 16px;
 
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pp-link {
