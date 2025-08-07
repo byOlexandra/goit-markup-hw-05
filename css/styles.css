@@ -747,12 +747,26 @@ input {
     max-width: 600px;
 }
 
-.subscribe-form label {
-    width: 50%;
+.subs-text {
+    color: #FFFFFF;
 
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer-subs-label {
+    display: flex;
+    gap: 24px;
 }
 
 .subscribe-input {
@@ -760,24 +774,20 @@ input {
     color: white;
     height: 40px;
     width: 264px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
     
     border-radius: 4px;
-    border-color: #FFFFFF;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #ffffff;
 
     background-color: transparent;
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    margin-top: 16px;
     padding-left: 16px;
-    /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.input-wrapper-footer {
-    display: flex;
-    gap: 24px;
+    
 }
 
 input::placeholder {
@@ -791,20 +801,28 @@ input::placeholder {
 .subscribe-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
-    align-self: flex-end;
 
     background-color: #4D5AE5;
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     height: 40px;
-    width: 165px;
+    min-width: 165px;
 
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .plane-icon-form {
+    margin-left: 16px;
     fill: #FFFFFF;
 }
 
