@@ -223,14 +223,15 @@ section {
     justify-content: center;
     align-items: center;
 
-    opacity: 1;
-    /* pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
 }
 
-/* .modal-overlay.is-open  {
+.modal-overlay.is-open  {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 .modal {
     background-color: #FCFCFC;
@@ -307,19 +308,10 @@ section {
     font-weight: 400;
 }
 
-/* .overlay-icon:focus-within {
-    fill: rgba(77, 90, 229, 1);
-} */
 
 .box-form {
     position: relative;
 }
-
-/* .box-form:focus {
-    fill: rgba(77, 90, 229, 1);
-
-} */
-
 
 
 .form-input:focus {
