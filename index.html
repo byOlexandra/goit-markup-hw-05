@@ -381,7 +381,7 @@
                                 <p class="subs-text">Subscribe</p>
 
                                 <form class="subscribe-form" name="subscribe-form">
-                                    <label for="" class="footer-subs-label">
+                                    <label for="subs-mail" class="footer-subs-label">
                                         <input id="subs-mail" type="email" placeholder="E-mail" name="email-subscribe" class="subscribe-input" required />
                                         </label>
                                         <button type="submit" class="subscribe-btn">
@@ -409,23 +409,23 @@
  
                         <form class="overlay-form">
                             <div class="box-label">
-                                <label for="username"> Name </label>
+                                <label for="user-name" class="modal-label"> Name </label>
                                     
                                     <div class="box-form">
                                         <input
                                          class="form-input"
-                                         id="username"
+                                         id="user-name"
                                          type="text"
-                                          name="name"
+                                          name="user-name"
                                           required
                                           />
-                                        <svg class="overlay-icon" width="18" height="18">
+                                        <svg class="overlay-icon" width="18" height="24">
                                             <use href="./images/icons.svg#icon-person"></use>
                                         </svg>
                                     </div>                                
                             </div>
                             <div class="box-label">                                
-                                    <label for="phone"> Phone  </label>
+                                    <label for="phone" class="modal-label"> Phone  </label>
                                     <div class="box-form">
                                         <input
                                         class="form-input"
@@ -433,12 +433,12 @@
                                       type="tel"
                                       name="tel"
                                       required />
-                                      <svg class="overlay-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone"></use></svg>
+                                      <svg class="overlay-icon" width="18" height="24"><use href="./images/icons.svg#icon-phone"></use></svg>
                                     </div>
                                       
                                 </div>                               
-                             <div class="box-label">
-                                <label for="mail"> Email  </label>
+                             <div class="box-label email-label">
+                                <label for="mail" class="modal-label"> Email  </label>
                                     <div class="box-form">                                        
                                           <input
                                           class="form-input"
@@ -446,23 +446,19 @@
                                           type="email"
                                           name="email"
                                           required />
-                                          <svg class="overlay-icon" width="18" height="18"><use href="./images/icons.svg#icon-email"></use></svg>
+                                          <svg class="overlay-icon" width="18" height="24"><use href="./images/icons.svg#icon-email"></use></svg>
                                     </div>
                                    
                             </div>
                             <div class="box-label">
-                                <label for="comment">
+                                <label for="user-comment" class="modal-label">
                                             Comment </label>
                                     <div class="box-form">                                        
                                          <textarea placeholder="Text input"
                                          class="form-input comment-input"
-                                         id="comment"
+                                         id="user-comment"
+                                         name="user-comment"
                                          required    ></textarea>
-                                         
-                                         
-                                        
-                                                                              
-        
                                      </div>
                                     
                             </div>   
@@ -473,9 +469,9 @@
                                 <input 
                                 class="visually-hidden"
                                 type="checkbox"
-                                name="userprivacy"
+                                name="user-privacy"
                                 id="user-privacy"
-                                value="accept"
+                                value="true"
                                 >
                                 <label for="user-privacy" class="pp-label">
                                     <span class="box">
