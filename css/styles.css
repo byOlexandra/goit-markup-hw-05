@@ -827,14 +827,11 @@ input::placeholder {
     font-weight: 400;
 }
 
-.pp-text {
-    display: inline-flex;
-}
 
 .pp-link {
     text-decoration: underline;
     line-height: 1.33;
-    color: #4D5AE5;
+    color: #4d5ae5;
 }
 
 .visually-hidden:checked + .pp-label .box {
