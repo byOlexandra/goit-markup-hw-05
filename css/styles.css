@@ -635,7 +635,7 @@ input::placeholder {
     border-radius: 4px;
     width: 408px;
     min-height: 584px;
-    padding-top: 72px;
+    padding: 72px 24px 24px 24px;
     
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -703,11 +703,13 @@ input::placeholder {
     gap: 8px;
 
     color: #8E8F99;
-
-    margin: 0px 24px;
 }
 
-.comment-label {
+.box-label {
+    margin-bottom: 8px;
+}
+
+.box-label.comment-label {
     margin-bottom: 16px;
 }
 
@@ -721,11 +723,6 @@ input::placeholder {
     font-weight: 400;
     letter-spacing: 0.04em;
 }
-
-.box-label {
-    margin-bottom: 8px;
-}
-
 
 .box-form {
     position: relative;
@@ -762,7 +759,10 @@ input::placeholder {
     padding: 8px 16px;
     height: 120px;
     resize: none;
-    
+    font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     color: rgba(46, 47, 66, 0.4);
 }
 
 .comment-input::placeholder {
@@ -802,6 +802,7 @@ input::placeholder {
 
 .box {
     display: inline-flex;
+    
     align-items: center;
     justify-content: center;
 
@@ -824,6 +825,10 @@ input::placeholder {
     line-height: 1.17;
     letter-spacing: 0.04em;
     font-weight: 400;
+}
+
+.pp-text {
+    display: inline-flex;
 }
 
 .pp-link {
