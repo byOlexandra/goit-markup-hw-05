@@ -459,7 +459,6 @@ section {
 }
 
 .footer-first-box {
-    /* margin-right: 120px; */
 }
 
 .last-logo {
@@ -576,7 +575,6 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
 
     background-color: #4D5AE5;
     color: #FFFFFF;
@@ -696,11 +694,6 @@ input::placeholder {
 }
 
 .overlay-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
     color: #8E8F99;
 }
 
@@ -850,7 +843,6 @@ input::placeholder {
 
     padding: 16px 32px;
     margin: 0 auto;
-    margin-bottom: 24px;
 
     border-radius: 4px;
     border: none;
